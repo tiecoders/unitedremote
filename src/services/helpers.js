@@ -20,7 +20,7 @@ const getTimeout = (startingTime, minimumDelay = 2000) => {
  */
 const getLast30DaysDate = () => {
   var date = new Date()
-  date.setDate(date.getDate() - 1)
+  date.setDate(date.getDate() - 30)
   return date.toISOString().slice(0,10)
 }
 
